@@ -1,86 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>APEX Hackathon 2024</title>
-        <meta
-            name="description"
-            content="APEX Hackathon Schedule and Information"
-        />
-        <link rel="stylesheet" href="styles.css" />
-        <!-- Google Fonts -->
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
-            rel="stylesheet"
-        />
+        <style>
+            html,
+            body {
+                background-color: #131313;
+                margin: 0;
+                padding: 0;
+            }
+        </style>
+        <link rel="stylesheet" href="/css/home.css" />
+        <script src="/js/templater.js"></script>
     </head>
     <body>
-        <nav class="navbar">
-            <div class="container">
-                <h1 class="logo">APEX Hackathon</h1>
-                <ul class="nav-links">
-                    <li><a href="#schedule">Schedule</a></li>
-                    <li><a href="#location">Location</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li>
-                        <a href="#register" class="register-btn"
+        <div id="page-content">
+            <style>
+                @import url("/css/home.css");
+            </style>
+
+            <header class="hero">
+                <div class="container">
+                    <h1>APEX Hackathon 2024</h1>
+                    <p class="lead">
+                        24 Hours of Coding, Creating, and Collaboration
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="schedule.html" class="cta-button primary"
+                            >View Schedule</a
+                        >
+                        <a href="#register" class="cta-button secondary"
                             >Register Now</a
                         >
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-        <header class="hero">
-            <div class="container">
-                <h1>APEX Hackathon 2024</h1>
-                <p class="lead">
-                    24 Hours of Coding, Creating, and Collaboration
-                </p>
-                <div class="event-details">
-                    <div class="detail">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p>295 SE Ashworth Rd, Waukee, IA 50263</p>
-                    </div>
-                    <div class="detail">
-                        <i class="fas fa-calendar-alt"></i>
-                        <p>Check-in: 4:30 PM - 5:00 PM</p>
                     </div>
                 </div>
-            </div>
-        </header>
+            </header>
 
-        <main>
-            <section id="schedule" class="schedule-section">
+            <section class="features">
                 <div class="container">
-                    <h2>Event Schedule</h2>
-                    <div class="schedule-tabs">
-                        <button class="tab-btn active" data-day="friday">
-                            Friday
-                        </button>
-                        <button class="tab-btn" data-day="saturday">
-                            Saturday
-                        </button>
-                    </div>
-                    <div class="schedule-content" id="scheduleContent">
-                        <!-- Schedule content will be populated by JavaScript -->
+                    <h2>Why Join APEX Hackathon?</h2>
+                    <div class="features-grid">
+                        <!-- Add feature cards here -->
                     </div>
                 </div>
             </section>
-        </main>
-
-        <footer>
-            <div class="container">
-                <p>&copy; 2024 APEX Hackathon. All rights reserved.</p>
-            </div>
-        </footer>
-
-        <!-- Font Awesome for icons -->
-        <script
-            src="https://kit.fontawesome.com/your-kit-code.js"
-            crossorigin="anonymous"
-        ></script>
-        <script src="script.js"></script>
+        </div>
     </body>
 </html>

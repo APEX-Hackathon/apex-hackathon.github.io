@@ -1,0 +1,47 @@
+.hero {
+    padding: 10rem 0 6rem;
+    text-align: center;
+    background: linear-gradient(
+        135deg,
+        var(--primary-color),
+        var(--background-color) 50%,
+        var(--secondary-color)
+    );
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.cta-button {
+    padding: 1rem 2.5rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.cta-button.primary {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+.cta-button.secondary {
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.features {
+    padding: 6rem 0;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
