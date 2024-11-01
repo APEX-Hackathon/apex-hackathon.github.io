@@ -3,6 +3,10 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="description"
+            content="APEX Hackathon 2024 - A 24-hour coding event focused on innovation and collaboration"
+        />
         <title>APEX Hackathon 2024</title>
         <style>
             html,
@@ -23,6 +27,12 @@
         <nav class="navbar">
             <div class="container">
                 <h1 class="logo">APEX Hackathon</h1>
+                <button
+                    class="mobile-nav-toggle"
+                    aria-label="Toggle navigation"
+                >
+                    ☰
+                </button>
                 <ul class="nav-links">
                     <li><a href="/">Home</a></li>
                     <li><a href="schedule.html">Schedule</a></li>
@@ -52,5 +62,8 @@
             crossorigin="anonymous"
         ></script>
         <script src="/js/templater.js"></script>
+        <div id="loading-overlay">
+            <img src="/images/logo.png" alt="APEX Logo" class="loading-logo" />
+        </div>
     </body>
 </html>
