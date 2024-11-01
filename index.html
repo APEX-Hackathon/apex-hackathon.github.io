@@ -1,25 +1,86 @@
-!<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title></title>
-        <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="" />
+        <title>APEX Hackathon 2024</title>
+        <meta
+            name="description"
+            content="APEX Hackathon Schedule and Information"
+        />
+        <link rel="stylesheet" href="styles.css" />
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+            rel="stylesheet"
+        />
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">
-                You are using an <strong>outdated</strong> browser. Please
-                <a href="#">upgrade your browser</a> to improve your experience.
-            </p>
-        <![endif]-->
-        <h1>Test!</h1>
-        <script src="" async defer></script>
+        <nav class="navbar">
+            <div class="container">
+                <h1 class="logo">APEX Hackathon</h1>
+                <ul class="nav-links">
+                    <li><a href="#schedule">Schedule</a></li>
+                    <li><a href="#location">Location</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li>
+                        <a href="#register" class="register-btn"
+                            >Register Now</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <header class="hero">
+            <div class="container">
+                <h1>APEX Hackathon 2024</h1>
+                <p class="lead">
+                    24 Hours of Coding, Creating, and Collaboration
+                </p>
+                <div class="event-details">
+                    <div class="detail">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>295 SE Ashworth Rd, Waukee, IA 50263</p>
+                    </div>
+                    <div class="detail">
+                        <i class="fas fa-calendar-alt"></i>
+                        <p>Check-in: 4:30 PM - 5:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section id="schedule" class="schedule-section">
+                <div class="container">
+                    <h2>Event Schedule</h2>
+                    <div class="schedule-tabs">
+                        <button class="tab-btn active" data-day="friday">
+                            Friday
+                        </button>
+                        <button class="tab-btn" data-day="saturday">
+                            Saturday
+                        </button>
+                    </div>
+                    <div class="schedule-content" id="scheduleContent">
+                        <!-- Schedule content will be populated by JavaScript -->
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                <p>&copy; 2024 APEX Hackathon. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <!-- Font Awesome for icons -->
+        <script
+            src="https://kit.fontawesome.com/your-kit-code.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="script.js"></script>
     </body>
 </html>
