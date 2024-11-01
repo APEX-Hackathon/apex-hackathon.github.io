@@ -100,10 +100,14 @@ function initializeSchedule() {
     }
 
     function displaySchedule(day) {
-        const schedule = window.scheduleData[day];
-        scheduleContent.innerHTML = schedule
-            .map((item) => createScheduleItem(item))
-            .join("");
+        scheduleContent.innerHTML = '<div class="loading-spinner"></div>';
+
+        setTimeout(() => {
+            const schedule = window.scheduleData[day];
+            scheduleContent.innerHTML = schedule
+                .map((item) => createScheduleItem(item))
+                .join("");
+        }, 0);
     }
 
     // Event Listeners
@@ -122,6 +126,5 @@ function initializeSchedule() {
     // Initial load
     displaySchedule("friday");
 }
-
 // Call the initialization function
 initializeSchedule();

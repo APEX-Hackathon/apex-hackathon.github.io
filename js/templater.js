@@ -3,6 +3,10 @@ async function loadTemplate() {
         const response = await fetch("/templates/layout.html");
         const template = await response.text();
 
+        // Show loading overlay for at least 0.5 seconds
+        const loadingStart = Date.now();
+        const minimumLoadTime = 500; // 0.5 seconds
+
         // Get the content from the page-content div
         const pageContentEl = document.getElementById("page-content");
         const pageContent = pageContentEl.innerHTML;
@@ -46,6 +50,39 @@ async function loadTemplate() {
                 link.classList.add("active");
             }
         });
+
+        const mobileNavToggle = document.querySelector(".mobile-nav-toggle");
+        const navLinksContainer = document.querySelector(".nav-links"); // Get the ul element
+
+        if (mobileNavToggle && navLinksContainer) {
+            mobileNavToggle.addEventListener("click", () => {
+                navLinksContainer.classList.toggle("active");
+                mobileNavToggle.setAttribute(
+                    "aria-expanded",
+                    navLinksContainer.classList.contains("active")
+                );
+            });
+        }
+
+        // Ensure loading overlay shows for at least 2 seconds
+        const loadingElapsed = Date.now() - loadingStart;
+        const remainingTime = Math.max(0, minimumLoadTime - loadingElapsed);
+
+        setTimeout(() => {
+            const overlay = document.getElementById("loading-overlay");
+            const mainContent = document.getElementById("main-content");
+
+            if (overlay) {
+                overlay.classList.add("fade-out");
+                setTimeout(() => {
+                    overlay.remove();
+                    // Add visible class to main content after overlay fades
+                    if (mainContent) {
+                        mainContent.classList.add("visible");
+                    }
+                }, 500);
+            }
+        }, remainingTime);
     } catch (error) {
         console.error("Error loading template:", error);
     }
@@ -53,3 +90,11 @@ async function loadTemplate() {
 
 // Load template when DOM is ready
 document.addEventListener("DOMContentLoaded", loadTemplate);
+// Add this to your main JavaScript file
+document.addEventListener("DOMContentLoaded", () => {
+    setTimeout(() => {
+        document
+            .querySelector(".nav-links")
+            .classList.add("transitions-enabled");
+    }, 500);
+});
