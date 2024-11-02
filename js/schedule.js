@@ -61,7 +61,7 @@ if (typeof window.scheduleData === "undefined") {
                 time: "11:00 AM - 12:15 PM",
                 location: "Triangle",
                 activity:
-                    "Business Partners/Break Time (Does not count towards 24 hours)",
+                    "Business Sp/Break Time (Does not count towards 24 hours)",
             },
             {
                 time: "6:00 PM",

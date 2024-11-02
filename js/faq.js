@@ -24,7 +24,7 @@ const faqData = {
         },
         {
             question: "What's the event schedule?",
-            answer: "Key times:<ul><li>Friday 4:45 PM - 5:00 PM: Check-in and hand stamping at front office</li><li>Friday 5:30 PM: Official start</li><li>Midnight - 6 AM: Code editing disabled</li><li>Saturday: Business partner showcase during lunch break</li></ul>",
+            answer: "Key times:<ul><li>Friday 4:45 PM - 5:00 PM: Check-in and hand stamping at front office</li><li>Friday 5:30 PM: Official start</li><li>Midnight - 6 AM: Code editing disabled</li><li>Saturday: Business sponsor showcase during lunch break</li></ul>",
         },
         {
             question: "Where is the event located?",
