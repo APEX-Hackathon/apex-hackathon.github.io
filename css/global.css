@@ -70,6 +70,18 @@ body {
     display: none;
 }
 
+.logo::before {
+    content: ">>";
+    margin-right: 0.5rem;
+    opacity: 0.6;
+}
+
+.logo::after {
+    content: "<<";
+    margin-left: 0.5rem;
+    opacity: 0.6;
+}
+
 .nav-links {
     display: flex;
     gap: 1rem;
