@@ -121,7 +121,7 @@ body {
 
 .register-btn {
     background-color: var(--primary-color);
-    color: var(--white) !important;
+    color: var(--dark-text) !important;
     padding: 0.75rem 2rem;
     border-radius: 2rem;
     transition: var(--transition);

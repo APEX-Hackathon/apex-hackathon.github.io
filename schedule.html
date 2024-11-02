@@ -8,10 +8,10 @@
             body {
                 background-color: #131313;
             }
-            body * {
+            body *:not(#loading-overlay) {
                 opacity: 0;
             }
-            body.loaded * {
+            body.loaded *:not(#loading-overlay) {
                 opacity: unset;
             }
         </style>

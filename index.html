@@ -6,10 +6,10 @@
             body {
                 background-color: #131313;
             }
-            body * {
+            body *:not(#loading-overlay) {
                 opacity: 0;
             }
-            body.loaded * {
+            body.loaded *:not(#loading-overlay) {
                 opacity: unset;
             }
         </style>
@@ -28,7 +28,9 @@
                         <a href="schedule.html" class="cta-button primary"
                             >View Schedule</a
                         >
-                        <a href="#register" class="cta-button secondary"
+                        <a
+                            href="https://forms.gle/Qw8Rj1tY3ET8jz6q6"
+                            class="cta-button secondary"
                             >Register Now</a
                         >
                     </div>
