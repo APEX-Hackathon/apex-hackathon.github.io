@@ -1,13 +1,7 @@
 const partnersData = {
-    // platinum: [
-    //     {
-    //         name: "Hy-Vee",
-    //         logo: "/images/partners/hyvee-logo.png",
-    //         description:
-    //             "Leading grocery retailer supporting technology innovation and education in Iowa.",
-    //         website: "https://www.hy-vee.com",
-    //     },
-    // ],
+    partners: [
+        // Add partners here as needed
+    ]
 };
 
 function createPartnerCard(partner) {
@@ -22,14 +16,12 @@ function createPartnerCard(partner) {
 }
 
 function initializePartners() {
-    Object.keys(partnersData).forEach((tier) => {
-        const container = document.getElementById(`${tier}-partners`);
-        if (container) {
-            container.innerHTML = partnersData[tier]
-                .map((partner) => createPartnerCard(partner))
-                .join("");
-        }
-    });
+    const container = document.getElementById('partners');
+    if (container && partnersData.partners) {
+        container.innerHTML = partnersData.partners
+            .map((partner) => createPartnerCard(partner))
+            .join("");
+    }
 }
 
 document.addEventListener("DOMContentLoaded", initializePartners);

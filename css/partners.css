@@ -22,17 +22,6 @@
     opacity: 0.8;
 }
 
-.tier {
-    margin-bottom: 4rem;
-}
-
-.tier h3 {
-    text-align: center;
-    color: var(--light-text);
-    margin-bottom: 2rem;
-    font-size: 1.8rem;
-}
-
 .partners-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -125,7 +114,7 @@
     }
 }
 
-.partnership-tiers {
+.partner-opportunities {
     list-style: none;
     padding: 0;
     margin: 2rem auto;
@@ -133,22 +122,17 @@
     text-align: left;
 }
 
-.partnership-tiers li {
-    margin-bottom: 1rem;
+.partner-opportunities li {
     color: var(--light-text);
-    opacity: 0.9;
+    opacity: 0.8;
+    margin-bottom: 1rem;
     padding-left: 1.5rem;
     position: relative;
 }
 
-.partnership-tiers li::before {
-    content: "→";
+.partner-opportunities li::before {
+    content: "•";
     color: var(--primary-color);
     position: absolute;
     left: 0;
-}
-
-.partnership-tiers strong {
-    color: var(--primary-color);
-    font-weight: 600;
 }

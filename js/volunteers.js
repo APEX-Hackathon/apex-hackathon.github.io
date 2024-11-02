@@ -20,19 +20,19 @@ const volunteerOpportunities = [
     {
         title: "Help Desk",
         description:
-            "Provide technical guidance and programming support to hackathon participants. We're seeking volunteers with strong knowledge in either frontend development (HTML, CSS, JavaScript) and or backend development (Python, databases). Help participants overcome coding challenges, explain key programming concepts, and provide mentorship throughout the event.",
+            "Provide programming support to participants. Looking for volunteers skilled in frontend and or backend to help participants.",
         requirements: [
             "Strong programming knowledge in Python/JavaScript",
             "Web development experience",
             "Problem-solving skills"
         ],
         timeCommitment: "3 hours",
-        slots: 2,
+        slots: 10,
     },
     {
         title: "Presentors",
         description:
-            "Lead engaging 15-30 minute technical sessions during the hackathon. We're seeking industry professionals to present on topics like web development, Python programming, API integration, database design, or other relevant technologies. These quick-learning sessions will help participants expand their technical knowledge during the event.",
+            "Lead 15-30 minute technical sessions on web development, Python, or other relevant technologies during the hackathon.",
         requirements: [
             "Professional experience in tech",
             "Public speaking ability",
