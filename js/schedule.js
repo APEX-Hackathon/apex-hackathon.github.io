@@ -100,6 +100,9 @@ function initializeSchedule() {
     }
 
     function displaySchedule(day) {
+        // Store the current height before changing content
+        const currentHeight = scheduleContent.offsetHeight;
+        scheduleContent.style.height = `${currentHeight}px`;
         scheduleContent.innerHTML = '<div class="loading-spinner"></div>';
 
         setTimeout(() => {
@@ -107,6 +110,15 @@ function initializeSchedule() {
             scheduleContent.innerHTML = schedule
                 .map((item) => createScheduleItem(item))
                 .join("");
+
+            // Set height to auto after content is loaded
+            const newHeight = scheduleContent.scrollHeight;
+            scheduleContent.style.height = `${newHeight}px`;
+
+            // Remove fixed height after transition
+            setTimeout(() => {
+                scheduleContent.style.height = "auto";
+            }, 300); // Match this with your CSS transition duration
         }, 0);
     }
 
