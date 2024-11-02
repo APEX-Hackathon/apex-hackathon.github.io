@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="/css/faq.css" />
+        <script src="/js/templater.js"></script>
+        <style>
+            html,
+            body {
+                background-color: #131313;
+                margin: 0;
+                padding: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="page-content">
+            <section class="faq-section">
+                <div class="container">
+                    <h2>Frequently Asked Questions</h2>
+                    <div class="important-notice">
+                        <h3>Important Notice</h3>
+                        <p>
+                            To join the hackathon, please fill out
+                            <a
+                                href="https://forms.gle/Qw8Rj1tY3ET8jz6q6"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >this form</a
+                            >. This is how we will be placing people on teams.
+                            You must fill this out if you want to attend.
+                        </p>
+                    </div>
+                    <div class="faq-categories">
+                        <button
+                            class="category-btn active"
+                            data-category="generalInfo"
+                        >
+                            General
+                        </button>
+                        <button class="category-btn" data-category="timeline">
+                            Event Timeline
+                        </button>
+                        <button
+                            class="category-btn"
+                            data-category="gettingReady"
+                        >
+                            Preparing
+                        </button>
+                        <button
+                            class="category-btn"
+                            data-category="teamFormation"
+                        >
+                            Teams
+                        </button>
+                        <button class="category-btn" data-category="resources">
+                            Resources
+                        </button>
+                    </div>
+                    <div class="faq-container">
+                        <!-- FAQ items will be populated by /js/faq.js -->
+                    </div>
+                </div>
+            </section>
+        </div>
+        <script src="/js/faq.js"></script>
+    </body>
+</html>
