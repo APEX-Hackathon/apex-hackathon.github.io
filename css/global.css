@@ -302,21 +302,25 @@ footer {
     -ms-user-drag: none;
     height: 50%;
     width: auto;
-    animation: pulse 2s ease-in-out infinite;
+    animation: pulse-and-glow 1.2s ease-in-out infinite;
+    filter: drop-shadow(0 0 10px black);
 }
 
-@keyframes pulse {
+@keyframes pulse-and-glow {
     0% {
-        opacity: 0.4;
-        transform: scale(0.98);
+        opacity: 0.3;
+        transform: scale(0.95);
+        filter: drop-shadow(0 0 5px black);
     }
     50% {
         opacity: 1;
-        transform: scale(1.02);
+        transform: scale(1.05);
+        filter: drop-shadow(0 0 20px black);
     }
     100% {
-        opacity: 0.4;
-        transform: scale(0.98);
+        opacity: 0.3;
+        transform: scale(0.95);
+        filter: drop-shadow(0 0 5px black);
     }
 }
 
