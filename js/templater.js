@@ -64,6 +64,9 @@ async function loadTemplate() {
             });
         }
 
+        // Dispatch event when template is loaded
+        document.dispatchEvent(new Event("template-loaded"));
+
         // Ensure loading overlay shows for at least 2 seconds
         const loadingElapsed = Date.now() - loadingStart;
         const remainingTime = Math.max(0, minimumLoadTime - loadingElapsed);
