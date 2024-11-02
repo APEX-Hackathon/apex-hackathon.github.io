@@ -266,6 +266,13 @@ footer {
 }
 
 #loading-overlay {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -moz-user-drag: none;
+    -ms-user-drag: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -286,6 +293,13 @@ footer {
 }
 
 .loading-logo {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -moz-user-drag: none;
+    -ms-user-drag: none;
     height: 50%;
     width: auto;
     animation: pulse 2s ease-in-out infinite;
