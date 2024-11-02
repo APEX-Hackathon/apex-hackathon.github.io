@@ -26,7 +26,7 @@
 
 .cta-button.primary {
     background-color: var(--primary-color);
-    color: var(--background-color);
+    color: var(--dark-text);
 }
 
 .cta-button.secondary {
