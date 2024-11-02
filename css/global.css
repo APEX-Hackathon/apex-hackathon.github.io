@@ -59,7 +59,7 @@ body {
 
 .nav-links {
     display: flex;
-    gap: 2.5rem;
+    gap: 1rem;
     list-style: none;
 }
 
@@ -171,7 +171,7 @@ footer {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 875px) {
     .nav-links {
         display: flex;
         position: fixed;
@@ -234,7 +234,7 @@ footer {
     padding: 0.5rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 875px) {
     .mobile-nav-toggle {
         display: block;
     }

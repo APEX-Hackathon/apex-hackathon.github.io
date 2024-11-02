@@ -119,7 +119,7 @@
     box-shadow: 0 8px 25px rgba(196, 214, 0, 0.3);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 875px) {
     .partners-grid {
         grid-template-columns: 1fr;
     }
