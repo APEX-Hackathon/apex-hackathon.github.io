@@ -1,8 +1,8 @@
-const sponsorsData = {
+const partnersData = {
     platinum: [
         {
             name: "Hy-Vee",
-            logo: "/images/sponsors/hyvee-logo.png",
+            logo: "/images/partners/hyvee-logo.png",
             description:
                 "Leading grocery retailer supporting technology innovation and education in Iowa.",
             website: "https://www.hy-vee.com",
@@ -11,7 +11,7 @@ const sponsorsData = {
     gold: [
         {
             name: "Principal",
-            logo: "/images/sponsors/principal-logo.png",
+            logo: "/images/partners/principal-logo.png",
             description:
                 "Global financial investment management and insurance company headquartered in Des Moines.",
             website: "https://www.principal.com",
@@ -20,36 +20,34 @@ const sponsorsData = {
     silver: [
         {
             name: "Waukee APEX",
-            logo: "/images/sponsors/apex-logo.png",
+            logo: "/images/partners/apex-logo.png",
             description:
-                "Innovative education program connecting students with business sponsors.",
+                "Innovative education program connecting students with business partners.",
             website: "https://apex.waukeeschools.org",
         },
     ],
 };
 
-function createSponsorCard(sponsor) {
+function createPartnerCard(partner) {
     return `
-        <div class="sponsor-card">
-            <img src="${sponsor.logo}" alt="${sponsor.name} logo" class="sponsor-logo">
-            <h4 class="sponsor-name">${sponsor.name}</h4>
-            <p class="sponsor-description">${sponsor.description}</p>
-            <a href="${sponsor.website}" class="sponsor-link" target="_blank" rel="noopener noreferrer">Learn More</a>
+        <div class="partner-card">
+            <img src="${partner.logo}" alt="${partner.name} logo" class="partner-logo">
+            <h4 class="partner-name">${partner.name}</h4>
+            <p class="partner-description">${partner.description}</p>
+            <a href="${partner.website}" class="partner-link" target="_blank" rel="noopener noreferrer">Learn More</a>
         </div>
     `;
 }
 
-function initializeSponsors() {
-    // Populate each tier
-    Object.keys(sponsorsData).forEach((tier) => {
-        const container = document.getElementById(`${tier}-sponsors`);
+function initializePartners() {
+    Object.keys(partnersData).forEach((tier) => {
+        const container = document.getElementById(`${tier}-partners`);
         if (container) {
-            container.innerHTML = sponsorsData[tier]
-                .map((sponsor) => createsponsorCard(sponsor))
+            container.innerHTML = partnersData[tier]
+                .map((partner) => createPartnerCard(partner))
                 .join("");
         }
     });
 }
 
-// Initialize when DOM is loaded
-document.addEventListener("DOMContentLoaded", initializeSponsors);
+document.addEventListener("DOMContentLoaded", initializePartners);

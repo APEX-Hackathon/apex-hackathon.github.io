@@ -1,4 +1,4 @@
-.sponsors-section {
+.partners-section {
     padding: 6rem 0;
     background: linear-gradient(
         to bottom,
@@ -7,7 +7,7 @@
     );
 }
 
-.sponsors-section h2 {
+.partners-section h2 {
     text-align: center;
     margin-bottom: 1rem;
     font-size: 2.5rem;
@@ -33,14 +33,14 @@
     font-size: 1.8rem;
 }
 
-.sponsors-grid {
+.partners-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
     margin-bottom: 2rem;
 }
 
-.sponsor-card {
+.partner-card {
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 1rem;
@@ -49,13 +49,13 @@
     transition: var(--transition);
 }
 
-.sponsor-card:hover {
+.partner-card:hover {
     transform: translateY(-5px);
     border-color: var(--primary-color);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
-.sponsor-logo {
+.partner-logo {
     width: 200px;
     height: 100px;
     object-fit: contain;
@@ -64,25 +64,25 @@
     transition: var(--transition);
 }
 
-.sponsor-card:hover .sponsor-logo {
+.partner-card:hover .partner-logo {
     filter: none;
 }
 
-.sponsor-name {
+.partner-name {
     color: var(--primary-color);
     font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 1rem;
 }
 
-.sponsor-description {
+.partner-description {
     color: var(--light-text);
     opacity: 0.8;
     font-size: 0.9rem;
     line-height: 1.6;
 }
 
-.become-sponsor {
+.become-partner {
     text-align: center;
     padding: 4rem 2rem;
     background: rgba(196, 214, 0, 0.05);
@@ -90,20 +90,20 @@
     margin-top: 4rem;
 }
 
-.become-sponsor h3 {
+.become-partner h3 {
     color: var(--primary-color);
     margin-bottom: 1rem;
     font-size: 2rem;
 }
 
-.become-sponsor p {
+.become-partner p {
     color: var(--light-text);
     opacity: 0.8;
     max-width: 600px;
     margin: 0 auto 2rem;
 }
 
-.sponsor-cta {
+.partner-cta {
     display: inline-block;
     background: var(--primary-color);
     color: var(--dark-text);
@@ -114,18 +114,18 @@
     transition: var(--transition);
 }
 
-.sponsor-cta:hover {
+.partner-cta:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(196, 214, 0, 0.3);
 }
 
 @media (max-width: 768px) {
-    .sponsors-grid {
+    .partners-grid {
         grid-template-columns: 1fr;
     }
 }
 
-.sponsorship-tiers {
+.partnership-tiers {
     list-style: none;
     padding: 0;
     margin: 2rem auto;
@@ -133,7 +133,7 @@
     text-align: left;
 }
 
-.sponsorship-tiers li {
+.partnership-tiers li {
     margin-bottom: 1rem;
     color: var(--light-text);
     opacity: 0.9;
@@ -141,14 +141,14 @@
     position: relative;
 }
 
-.sponsorship-tiers li::before {
+.partnership-tiers li::before {
     content: "→";
     color: var(--primary-color);
     position: absolute;
     left: 0;
 }
 
-.sponsorship-tiers strong {
+.partnership-tiers strong {
     color: var(--primary-color);
     font-weight: 600;
 }
