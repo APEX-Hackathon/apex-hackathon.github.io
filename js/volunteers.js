@@ -1,36 +1,43 @@
 const volunteerOpportunities = [
     {
-        title: "Technical Mentor",
+        title: "Staff Supervisors",
         description:
-            "Guide participants through technical challenges, provide code reviews, and share your expertise in various programming languages and frameworks.",
+            "We need APEX staff members present in the building during the hackathon event. This is a flexible position where staff can sign up for time slots that work with their schedule.",
         requirements: [
-            "3+ years programming experience",
-            "Strong communication skills",
+            "APEX building staff"
         ],
-        timeCommitment: "8 hours",
-        slots: 8,
+        timeCommitment: "Flexible",
+        slots: "4",
     },
     {
         title: "Registration Desk",
         description:
             "Welcome participants, handle check-in process, and distribute event materials. Be the friendly face of APEX Hackathon!",
         requirements: ["Organizational skills", "Customer service oriented"],
-        timeCommitment: "4 hours",
+        timeCommitment: "1 hour",
         slots: 4,
     },
     {
-        title: "Event Photographer",
+        title: "Help Desk",
         description:
-            "Capture the energy and excitement of the hackathon through photos and videos. Document key moments and participant interactions.",
-        requirements: ["Photography experience", "Own equipment"],
-        timeCommitment: "6 hours",
+            "Provide technical guidance and programming support to hackathon participants. We're seeking volunteers with strong knowledge in either frontend development (HTML, CSS, JavaScript) and or backend development (Python, databases). Help participants overcome coding challenges, explain key programming concepts, and provide mentorship throughout the event.",
+        requirements: [
+            "Strong programming knowledge in Python/JavaScript",
+            "Web development experience",
+            "Problem-solving skills"
+        ],
+        timeCommitment: "3 hours",
         slots: 2,
     },
     {
-        title: "Workshop Facilitator",
+        title: "Presentors",
         description:
-            "Lead mini-workshops or technical sessions during the hackathon. Share your knowledge in specific technologies or development practices.",
-        requirements: ["Teaching experience", "Expert in specific tech"],
+            "Lead engaging 15-30 minute technical sessions during the hackathon. We're seeking industry professionals to present on topics like web development, Python programming, API integration, database design, or other relevant technologies. These quick-learning sessions will help participants expand their technical knowledge during the event.",
+        requirements: [
+            "Professional experience in tech",
+            "Public speaking ability",
+            "Prepared presentation material"
+        ],
         timeCommitment: "2 hours",
         slots: 6,
     },
