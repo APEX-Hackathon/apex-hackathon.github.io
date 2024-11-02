@@ -1,31 +1,13 @@
 const partnersData = {
-    platinum: [
-        {
-            name: "Hy-Vee",
-            logo: "/images/partners/hyvee-logo.png",
-            description:
-                "Leading grocery retailer supporting technology innovation and education in Iowa.",
-            website: "https://www.hy-vee.com",
-        },
-    ],
-    gold: [
-        {
-            name: "Principal",
-            logo: "/images/partners/principal-logo.png",
-            description:
-                "Global financial investment management and insurance company headquartered in Des Moines.",
-            website: "https://www.principal.com",
-        },
-    ],
-    silver: [
-        {
-            name: "Waukee APEX",
-            logo: "/images/partners/apex-logo.png",
-            description:
-                "Innovative education program connecting students with business partners.",
-            website: "https://apex.waukeeschools.org",
-        },
-    ],
+    // platinum: [
+    //     {
+    //         name: "Hy-Vee",
+    //         logo: "/images/partners/hyvee-logo.png",
+    //         description:
+    //             "Leading grocery retailer supporting technology innovation and education in Iowa.",
+    //         website: "https://www.hy-vee.com",
+    //     },
+    // ],
 };
 
 function createPartnerCard(partner) {

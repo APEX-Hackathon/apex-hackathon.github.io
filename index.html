@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- hide the page by default with this inline style so that JS can reveal it later -->
         <style>
-            html,
             body {
                 background-color: #131313;
-                margin: 0;
-                padding: 0;
+            }
+            body * {
+                opacity: 0;
+            }
+            body.loaded * {
+                opacity: unset;
             }
         </style>
         <link rel="stylesheet" href="/css/home.css" />

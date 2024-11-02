@@ -83,6 +83,8 @@ async function loadTemplate() {
                     if (mainContent) {
                         mainContent.classList.add("visible");
                     }
+                    // Add loaded class to body
+                    document.body.classList.add("loaded");
                 }, 500);
             }
         }, remainingTime);
