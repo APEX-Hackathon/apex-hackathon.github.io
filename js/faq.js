@@ -31,14 +31,18 @@ const faqData = {
             answer: "Address: 295 SE Ashworth Rd, Waukee, IA 50263<br><br>When arriving at the WILC, check in at the front office to receive a hand stamp verifying your registration. This is only required on Friday - no re-stamping needed on Saturday.",
         },
         {
-            question: "What are the working arrangements?",
-            answer: "Teams can work either remotely or in person at a chosen location/member's house outside of WILC hours. Code editing will be disabled between midnight and 6 AM to ensure participants get rest.",
+            question: "What are the working arrangements?", // TODO when do we close? vvv
+            answer: "You will be able to work at the WILC building until it closes at 9:00 PM. Teams can work either remotely or in person at a chosen location/member's house outside of WILC hours. Code collaboration will be disabled between midnight and 6 AM to ensure participants get rest.",
         },
     ],
     gettingReady: [
         {
             question: "What technical skills do I need?",
             answer: "Basic knowledge of these technologies is highly recommended:<ul><li>HTML/CSS for website visuals</li><li>JavaScript for website mechanics</li><li>Python for server-side code (optional)</li></ul>",
+        },
+        {
+            question: "What's provided?", // TODO
+            answer: "We provide workspace at the WILC 5-9PM Friday and ???-6PM Saturday with WiFi and outlets. We will also provide a pizza dinner on Friday.",
         },
         {
             question: "What should I bring?",
@@ -62,7 +66,7 @@ const faqData = {
     teamFormation: [
         {
             question: "How are teams organized?",
-            answer: "Teams will be assembled one day before the event if you haven't already formed one. Maximum team size is 4 members. If you don't submit the registration form at least 24 hours in advance, you may not be placed on a team.",
+            answer: "Participants will be randomly assigned a team before the event if they haven't already formed or joined one. The maximum team size is 4 members. If you don't submit the registration form at least 24 hours in advance, you may not be placed on a team.",
         },
         {
             question: "How does team collaboration work?",

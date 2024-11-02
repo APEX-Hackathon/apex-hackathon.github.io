@@ -40,8 +40,19 @@ if (typeof window.scheduleData === "undefined") {
                 location: "Triangle",
                 activity: "Closer Speech: End of day one.",
             },
+            {
+                time: "Midnight",
+                location: "All Areas",
+                activity:
+                    "Get some sleep! GitHub Repositories locked until 6:00 AM Saturday.",
+            },
         ],
         saturday: [
+            {
+                time: "6:00 AM",
+                location: "All Areas",
+                activity: "Good Morning! GitHub Repos unlocked for the day.",
+            },
             {
                 time: "8:00 AM",
                 location: "WILC Front Office",
