@@ -30,7 +30,7 @@
 }
 
 .opportunity-description {
-    color: var(--text-color);
+    color: var(--light-text);
     opacity: 0.8;
     margin-bottom: 1.5rem;
     flex-grow: 1;
@@ -53,7 +53,7 @@
 
 .apply-button {
     background-color: var(--secondary-color);
-    color: var(--background-color);
+    color: var(--light-text);
     padding: 0.75rem 1.5rem;
     border-radius: 2rem;
     text-decoration: none;
@@ -66,7 +66,6 @@
 
 .apply-button:hover {
     background-color: var(--secondary-color);
-    color: var(--white);
     transform: translateY(-2px);
 }
 
