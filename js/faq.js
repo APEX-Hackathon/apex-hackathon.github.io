@@ -50,7 +50,7 @@ const faqData = {
         },
         {
             question: "How do I set up my development environment?",
-            answer: "Recommended Tools:<ul><li>VSCode for programming</li><li>Extensions (for VSCode):<ul><li>Git Blame/Git Lens - for tracking who did what</li><li>Live Server - to view website</li><li>Prettier - to format code</li><li>Language-specific extensions - to improve quality of life</li><li>Snippet extensions (pre-made code blocks for free)</li><li>Intellisense for your languages of choice</li></ul></li></ul>",
+            answer: "Recommended Tools:<ul><li>Visual Studio Code for programming</li><li>Extensions for VSCode:<ul><li>Git Blame/Git Lens - for tracking who did what</li><li>Live Server - to view website</li><li>Prettier - to format code</li><li>Language-specific extensions - to improve quality of life</li><li>Snippets (pre-made code blocks for free)</li><li>Intellisense for your languages of choice</li></ul></li></ul>",
         },
     ],
     resources: [
