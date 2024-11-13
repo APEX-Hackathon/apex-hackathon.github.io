@@ -21,6 +21,16 @@ async function loadTemplate() {
         // Replace the entire body with the template
         document.body.innerHTML = template;
 
+        // Add Umami analytics script
+        const umamiScript = document.createElement("script");
+        umamiScript.defer = true;
+        umamiScript.src = "https://cloud.umami.is/script.js";
+        umamiScript.setAttribute(
+            "data-website-id",
+            "4e0a633b-08be-404a-8b92-3d8509c74e10"
+        );
+        document.head.appendChild(umamiScript);
+
         // Insert the page content into the main content area
         document.getElementById("main-content").innerHTML = pageContent;
 
