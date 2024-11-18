@@ -1,0 +1,105 @@
+.teams-section {
+  padding: 8rem 0;
+  min-height: 100vh;
+}
+
+.teams-section h1 {
+  text-align: center;
+  margin-bottom: 4rem;
+  font-size: 3rem;
+  color: var(--primary-color);
+}
+
+.teams-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.team-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.team-header {
+  margin-bottom: 1.5rem;
+}
+
+.team-name {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.team-description {
+  color: var(--light-text);
+  opacity: 0.8;
+  font-size: 0.9rem;
+}
+
+.team-members {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.member-card {
+  text-align: center;
+}
+
+.member-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+  border: 2px solid var(--primary-color);
+  padding: 3px;
+  background-color: var(--background-color);
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.member-avatar:hover {
+  border-color: var(--accent-color, var(--secondary-color));
+}
+
+.member-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.member-role {
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+.member-github {
+  color: var(--primary-color);
+  font-size: 0.8rem;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 0.25rem;
+}
+
+.member-github:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .teams-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-members {
+    grid-template-columns: 1fr;
+  }
+}

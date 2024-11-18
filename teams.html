@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="/css/teams.css" />
+        <script src="/js/templater.js"></script>
+        <script src="/js/teams.js" defer></script>
+        <style>
+            body {
+                background-color: #131313;
+            }
+            body *:not(#loading-overlay) {
+                opacity: 0;
+            }
+            body.loaded *:not(#loading-overlay) {
+                opacity: unset;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="page-content">
+            <section class="teams-section">
+                <div class="container">
+                    <h1>Our Teams</h1>
+                    <div class="notice">
+                        <h3>Important Notice</h3>
+                        <p>
+                            To join a team, please fill out
+                            <a
+                                href="https://forms.gle/Qw8Rj1tY3ET8jz6q6"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >the signup form</a
+                            >. You will appear here once your team is finalized!
+                        </p>
+                    </div>
+                    <div class="teams-grid" id="teams-container"></div>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>

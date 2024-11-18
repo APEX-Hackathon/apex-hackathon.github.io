@@ -1,0 +1,20 @@
+{
+    "teams": [
+        {
+            "name": "FooBar",
+            "description": "We use Arch btw",
+            "members": [
+                {
+                    "name": "Ben Boonstra",
+                    "role": "Team Lead",
+                    "github": "bboonstra"
+                },
+                {
+                    "name": "Rishu Sharma",
+                    "role": "Member",
+                    "github": "firebolt9907"
+                }
+            ]
+        }
+    ]
+}
