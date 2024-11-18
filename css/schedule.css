@@ -1,76 +1,77 @@
 .schedule-section {
-    padding: 6rem 0;
-    background: linear-gradient(to bottom, var(--background-color), #1a1a1a);
+  padding: 6rem 0;
+  background: linear-gradient(to bottom, var(--background-color), #1a1a1a);
 }
 
 .schedule-section h2 {
-    text-align: center;
-    margin-bottom: 3rem;
-    font-size: 2.5rem;
-    color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  color: var(--primary-color);
 }
 
 .schedule-tabs {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
 }
 
 .tab-btn {
-    padding: 1rem 2.5rem;
-    border: none;
-    background-color: var(--primary-color);
-    border-radius: 2rem;
-    cursor: pointer;
-    font-family: inherit;
-    font-weight: 600;
-    transition: var(--transition);
-    font-size: 1.1rem;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    transform: translateY(-2px);
+  padding: 1rem 2.5rem;
+  border: none;
+  background-color: var(--primary-color);
+  border-radius: 2rem;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 600;
+  transition: var(--transition);
+  font-size: 1.1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+  color: var(--dark-text);
 }
 
 .tab-btn.active {
-    background-color: var(--secondary-color);
-    color: var(--white);
-    box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.3);
-    transform: translateY(0);
+  background-color: var(--secondary-color);
+  color: var(--white);
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.3);
+  transform: translateY(0);
 }
 
 .schedule-content {
-    max-width: 800px;
-    margin: 0 auto;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .schedule-item {
-    background-color: rgba(255, 255, 255, 0.03);
-    padding: 2rem;
-    border-radius: 1rem;
-    margin-bottom: 1.5rem;
-    box-shadow: var(--shadow);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    transition: var(--transition);
+  background-color: rgba(255, 255, 255, 0.03);
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: var(--transition);
 }
 
 .schedule-item:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
 .schedule-item .time {
-    color: var(--primary-color);
-    font-weight: 600;
-    margin-bottom: 0.75rem;
-    font-size: 1.2rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  font-size: 1.2rem;
 }
 
 .schedule-item .location {
-    font-size: 1rem;
-    color: rgba(255, 255, 255, 0.7);
-    margin-bottom: 0.75rem;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 0.75rem;
 }
 
 #scheduleContent {
-    transition: height 0.3s ease-out;
+  transition: height 0.3s ease-out;
 }
