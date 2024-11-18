@@ -81,11 +81,17 @@ body {
   margin-left: 0.5rem;
   opacity: 0.6;
 }
-
 .nav-links {
   display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
   gap: 1rem;
   list-style: none;
+  width: 100%;
+  padding: 20px;
+  padding-left: 50px;
+  margin: 0;
 }
 
 .nav-links.transitions-enabled {
