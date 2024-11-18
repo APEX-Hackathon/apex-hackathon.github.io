@@ -3,9 +3,7 @@ const volunteerOpportunities = [
         title: "Staff Supervisors",
         description:
             "We need APEX staff members present in the building during the hackathon event. This is a flexible position where staff can sign up for time slots that work with their schedule.",
-        requirements: [
-            "APEX building staff"
-        ],
+        requirements: ["APEX building staff"],
         timeCommitment: "Flexible",
         slots: "4",
     },
@@ -24,7 +22,7 @@ const volunteerOpportunities = [
         requirements: [
             "Strong programming knowledge in Python/JavaScript",
             "Web development experience",
-            "Problem-solving skills"
+            "Problem-solving skills",
         ],
         timeCommitment: "3 hours",
         slots: 10,
@@ -36,7 +34,7 @@ const volunteerOpportunities = [
         requirements: [
             "Professional experience in tech",
             "Public speaking ability",
-            "Prepared presentation material"
+            "Prepared presentation material",
         ],
         timeCommitment: "2 hours",
         slots: 6,
