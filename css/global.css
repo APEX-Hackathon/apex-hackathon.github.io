@@ -253,6 +253,19 @@ footer {
   .schedule-item {
     padding: 1.5rem;
   }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .logo::before,
+  .logo::after {
+    margin: 0 0.25rem;
+  }
+
+  .navbar .container {
+    padding: 0 1rem;
+  }
 }
 
 .mobile-nav-toggle {
