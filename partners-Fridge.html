@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="/css/partners.css" />
+        <script src="/js/templater.js"></script>
+        <style>
+            body {
+                background-color: #131313;
+            }
+            body *:not(#loading-overlay) {
+                opacity: 0;
+            }
+            body.loaded *:not(#loading-overlay) {
+                opacity: unset;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="page-content">
+            <section class="partners-section">
+                <div class="container">
+                    <h2>Our Partners</h2>
+                    <p class="section-lead">
+                        Join these innovative organizations in supporting the
+                        next generation of tech talent at APEX Hackathon 2024.
+                    </p>
+
+                    <div class="partners-grid" id="partners">
+                        <!-- Populated by JavaScript -->
+                    </div>
+
+                    <div class="become-partner">
+                        <h3>Become a Partner</h3>
+                        <p>
+                            Support innovation and education by becoming a
+                            partner of APEX Hackathon 2024. Your organization
+                            can play a crucial role in fostering the next
+                            generation of tech talent.
+                        </p>
+                        <p>
+                            As a partner, you'll have the opportunity to:
+                        </p>
+                        <ul class="partner-opportunities">
+                            <li>Showcase your organization with an interactive booth featuring company information and product demonstrations</li>
+                            <li>Provide technical mentorship at our Help Desk, offering guidance and support to participants</li>
+                            <li>Lead engaging technical presentations, sharing industry insights and expertise with aspiring developers</li>
+                        </ul>
+                        <a
+                            href="mailto:battlesbrown@gmail.com,hutchins260225@waukeeschools.org,boonstra26202@waukeeschools.org"
+                            class="partner-cta"
+                            >Contact Us to Partner</a
+                        >
+                    </div>
+                </div>
+            </section>
+        </div>
+        <script src="/js/partners.js"></script>
+    </body>
+</html>

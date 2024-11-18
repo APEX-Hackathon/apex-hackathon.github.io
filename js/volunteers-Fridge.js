@@ -71,8 +71,10 @@ function createOpportunityCard(opportunity) {
 }
 
 function applyForPosition(title) {
-    // Open the volunteer sign-up form in a new tab
-    window.open("https://forms.gle/hPo19NuuKTUpAxLY8", "_blank");
+    // This could be expanded to open a modal or redirect to an application form
+    alert(
+        `Thanks for your interest in the ${title} position! Application functionality coming soon.`
+    );
 }
 
 function initializeVolunteers() {
