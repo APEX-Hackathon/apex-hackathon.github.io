@@ -31,6 +31,7 @@ function createTeamCard(team) {
                     <img src="https://github.com/${member.github}.png" alt="${member.name}" class="member-avatar" onclick="window.open('https://github.com/${member.github}', '_blank')">
                     <h3 class="member-name">${member.name}</h3>
                     <p class="member-role">${member.role}</p>
+                    <p class="member-occupation small-text">${member.occupation}</p>
                     <a href="https://github.com/${member.github}" class="member-github" target="_blank">
                         @${member.github}
                     </a>
