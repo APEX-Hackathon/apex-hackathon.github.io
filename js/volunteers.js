@@ -100,7 +100,7 @@ const hostsData = [
     },
     {
         name: "Ben Boonstra",
-        description: "",
+        description: "My name is Ben, I love all things programming. I can't wait to get the event started and help out while also leading my own team.",
         members: [
             {
                 role: "Github and Event Organizer",
