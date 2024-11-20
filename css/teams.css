@@ -16,7 +16,13 @@
   gap: 2rem;
 }
 
-.team-card {
+.hosts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.host-card {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 1rem;
@@ -24,28 +30,28 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.team-card:hover {
+.host-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.team-header {
+.host-header {
   margin-bottom: 1.5rem;
 }
 
-.team-name {
+.host-name {
   font-size: 1.5rem;
   color: var(--primary-color);
   margin-bottom: 0.5rem;
 }
 
-.team-description {
+.host-description {
   color: var(--light-text);
   opacity: 0.8;
   font-size: 0.9rem;
 }
 
-.team-members {
+.host-members {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
@@ -71,12 +77,6 @@
   border-color: var(--accent-color, var(--secondary-color));
 }
 
-.member-name {
-  font-size: 0.9rem;
-  font-weight: 600;
-  margin-bottom: 0.25rem;
-}
-
 .member-role {
   font-size: 0.8rem;
   opacity: 0.7;
@@ -99,7 +99,7 @@
     grid-template-columns: 1fr;
   }
 
-  .team-members {
+  .host-members {
     grid-template-columns: 1fr;
   }
 }
