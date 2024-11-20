@@ -89,26 +89,28 @@ document.addEventListener("DOMContentLoaded", initializeVolunteers);
 const hostsData = [
     {
         name: "Gracie Hutchins",
-        description: "Hello! My name is Gracie, I really enjoy all things techy and wanted to host this Hackathon to encourage more students into STEM 🌸",
+        description:
+            "Hello! My name is Gracie, I really enjoy all things techy and wanted to host this Hackathon to encourage more students into STEM 🌸",
         members: [
             {
                 role: "Event Organizer and Host",
                 occupation: "Computer Technician",
-                github: "Ann-MarieDev"
-            }
-        ]
+                github: "Ann-MarieDev",
+            },
+        ],
     },
     {
         name: "Ben Boonstra",
-        description: "My name is Ben, I love all things programming. I can't wait to get the event started and help out while also leading my own team.",
+        description:
+            "My name is Ben, I love all things programming. I can't wait to get the event started and help out while also leading my own team.",
         members: [
             {
                 role: "Github and Event Organizer",
                 occupation: "Full-stack Developer",
-                github: "bboonstra"
-            }
-        ]
-    }
+                github: "bboonstra",
+            },
+        ],
+    },
 ];
 
 function loadHosts() {
@@ -152,3 +154,17 @@ function createHostCard(host) {
 
 // Load hosts when the DOM is fully loaded
 document.addEventListener("DOMContentLoaded", loadHosts);
+
+// Smooth scroll to hosts section
+document
+    .getElementById("scroll-to-hosts")
+    .addEventListener("click", function (event) {
+        event.preventDefault(); // Prevent default anchor click behavior
+        const target = document.getElementById("hosts-section");
+        if (target) {
+            // Check if the target exists
+            target.scrollIntoView({ behavior: "smooth", block: "start" }); // Smooth scroll to the target
+        } else {
+            console.error("Target section not found: hosts-section");
+        }
+    });
