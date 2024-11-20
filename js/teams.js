@@ -1,29 +1,29 @@
-async function loadTeams() {
+async function loadHosts() {
     try {
         const response = await fetch("/data/teams.json");
         const data = await response.json();
 
-        const container = document.getElementById("teams-container");
+        const container = document.getElementById("hosts-container");
 
         data.teams.forEach((team) => {
-            const teamElement = createTeamCard(team);
-            container.appendChild(teamElement);
+            const hostElement = createHostCard(team);
+            container.appendChild(hostElement);
         });
     } catch (error) {
-        console.error("Error loading teams:", error);
+        console.error("Error loading hosts:", error);
     }
 }
 
-function createTeamCard(team) {
-    const teamCard = document.createElement("div");
-    teamCard.className = "team-card";
+function createHostCard(team) {
+    const hostCard = document.createElement("div");
+    hostCard.className = "host-card";
 
-    teamCard.innerHTML = `
-        <div class="team-header">
-            <h2 class="team-name">${team.name}</h2>
-            <p class="team-description">${team.description}</p>
+    hostCard.innerHTML = `
+        <div class="host-header">
+            <h2 class="host-name">${team.name}</h2>
+            <p class="host-description">${team.description}</p>
         </div>
-        <div class="team-members">
+        <div class="host-members">
             ${team.members
                 .map(
                     (member) => `
@@ -41,7 +41,7 @@ function createTeamCard(team) {
         </div>
     `;
 
-    return teamCard;
+    return hostCard;
 }
 
-document.addEventListener("DOMContentLoaded", loadTeams);
+document.addEventListener("DOMContentLoaded", loadHosts);
