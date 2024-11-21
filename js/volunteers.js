@@ -28,7 +28,7 @@ const volunteerOpportunities = [
         slots: 10,
     },
     {
-        title: "Presentors",
+        title: "Presenters",
         description:
             "Lead 15-30 minute technical sessions on web development, Python, or other relevant technologies during the hackathon.",
         requirements: [
